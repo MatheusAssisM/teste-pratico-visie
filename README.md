@@ -1,6 +1,5 @@
 
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
+![screenshot](https://user-images.githubusercontent.com/65235458/109810643-8c475600-7c08-11eb-982b-4229b53370d5.png)
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -32,8 +31,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://serverassis.sytes.net:3000)
-[![Product Name Screen Shot2][product-screenshot2]]
+
+![screenshot2](https://user-images.githubusercontent.com/65235458/109810832-cc0e3d80-7c08-11eb-9751-11d3b21663bf.png)
+* If you want make a test, enter [HERE](url)](https://serverassis.sytes.net:3000)
 
 This project was made for a iterview code. 
 The challenge was to build a small api that consumes a database and sends it to a frontend. So I decided to do it without any framework or microframwork to challenge myself and show my potential. 
@@ -43,7 +43,7 @@ I used only an external library, jinja
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Python](https://www.python.org/)
-* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) for temaplete engine
+* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) (for template engine)
 
 
 <!-- GETTING STARTED -->
@@ -89,6 +89,5 @@ Project Link: [https://github.com/MatheusAssisM/projecto-visie](https://github.c
 
 
 
-[linkedin-url]: https://www.linkedin.com/in/matheus-assis-788a17188/
-[product-screenshot]: src/assets/screenshot.png
-[product-screenshot2]: src/assets/screenshot2.png
+
+
