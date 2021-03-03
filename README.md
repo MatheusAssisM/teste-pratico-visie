@@ -60,7 +60,7 @@ I used only an external library, jinja
    ```
  * If you are using powershell
   ```sh
-  ./env/Scripts/activate.ps1
+    ./env/Scripts/activate.ps1
   ```
 * If you're using cmd
    ```sh
