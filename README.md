@@ -19,11 +19,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -32,7 +28,6 @@
 ## About The Project
 
 
-![screenshot2](https://user-images.githubusercontent.com/65235458/109810832-cc0e3d80-7c08-11eb-9751-11d3b21663bf.png)
 * If you want make a test, enter [HERE](https://serverassis.sytes.net:3000)
 
 This project was made for a iterview code. 
@@ -86,7 +81,7 @@ I used only an external library, jinja
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-
+![screenshot2](https://user-images.githubusercontent.com/65235458/109810832-cc0e3d80-7c08-11eb-9751-11d3b21663bf.png)
 This is simple a crud... Not so misterious.
 
 
