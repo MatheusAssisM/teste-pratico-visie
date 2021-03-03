@@ -41,9 +41,9 @@ I used only an external library, jinja
 
 ### Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Python](https://www.python.org/)
 * [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) (for template engine)
+* [MysqlConector](https://dev.mysql.com/doc/connector-python/en/connector-python-installation-binary.html)
 
 
 <!-- GETTING STARTED -->
@@ -59,14 +59,26 @@ This section should list any major frameworks that you built your project using.
    ```sh
    git clone https://github.com/MatheusAssisM/projeto-visae.git
    ```
-2. Create a env python and install Python packages
+2. Active the env python and install Python packages
    ```sh
-    python -m venv env
+    cd server/
+   ```
+ * If you are using powershell
+  ```sh
+  ./env/Scripts/activate.ps1
+  ```
+* If you're using cmd
+   ```sh
+    ./env/Scripts/activate.bat 
+   ```
+3. Install the python packages
+   ```sh
+    cd ..
     pip install -r requirements.txt
    ```
-3. Running aplication
+4. Running aplication
    ```JS
-    cd ./src
+    cd ./server/src
     python main.py
    ```
 4. Enter on your http://localhost:3000
