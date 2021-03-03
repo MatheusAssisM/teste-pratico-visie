@@ -53,15 +53,12 @@ I used only an external library, jinja
 1. Clone the repo
    ```sh
    git clone https://github.com/MatheusAssisM/projeto-visae.git
-   ```
-2. Active the env python and install Python packages
-   ```sh
     cd server/
    ```
  * If you are using powershell
-  ```sh
-  ./env/Scripts/activate.ps1
-  ```
+    ```sh
+      ./env/Scripts/activate.ps1
+    ```
 * If you're using cmd
    ```sh
     ./env/Scripts/activate.bat 
