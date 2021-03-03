@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    {% block style %}
+    {% endblock %}
+    <title>Visae-Project</title>
+</head>
+
+<body>
+    <div class="content">
+        <!-- <h1 class="titulo">Teste Prático Visie</h1> -->
+        <div class="tableContainer">
+            <button class="addBtn" id="addBtn" onclick="openModal()">
+                <img src="https://img.icons8.com/dusk/64/000000/add-user-male.png"/>
+            </button>
+            <Table>
+                <tr>
+                    <th class="left">Nome</th>
+                    <th>Data de admissão</th>
+                    <th class="btn"></th>
+                </tr>
+                {% for item in data.data %}
+                <tr>
+                    <td class="cell">
+                        {{item[1].split(" ")[0]}}
+                    <td class="cell">
+                        {{data.date[data.counter + 1][0]}}-{{data.date[data.counter + 1][1]}}-{{data.date[data.counter +
+                        1][2]}}
+                    </td>
+                    <td class="tdButton">
+                        <a href="#" id="btnExcluir">
+                            <img src="https://img.icons8.com/plasticine/30/000000/filled-trash.png"/>
+                            <span style="display: none;" id="id_pessoa">{{item[0]}}</span>
+                        </a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </Table>
+        </div>
+
+        <div class="formContainer">
+            <div class="saveBox">
+                <input type="text" id="nome" placeholder="Insira um nome" minlength="5"><br>
+                <input type="text" id="rg" placeholder="Insira seu RG"><br>
+                <input type="text" id="cpf" placeholder="Insira seu CPF" required><br>
+                <input type="date" id="data"><br>
+                <select id="funcao">
+                    <option value="1">Desenvolvedor Python</option>
+                    <option value="2">Desenvolvedor Node</option>
+                    <option value="3">Desenvolvedor frontend</option>
+                    <option value="4">DevOps</option>
+                </select><br>
+
+                <button class="saveBtn" type="button" onclick="sentData()" id="btnSalvar">
+                    <img src="https://img.icons8.com/fluent/48/000000/save.png" />
+                </button>
+                <button class="closeBtn" onclick="closeModal()">
+                    <img src="https://img.icons8.com/color/48/000000/close-window.png" />
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const btnExcluir = document.querySelectorAll("a#btnExcluir")
+        const inpNome = document.querySelector("input#nome")
+        const inpRg = document.querySelector("input#rg")
+        const inpCpf = document.querySelector("input#cpf")
+        const inpFunc = document.querySelector("select#funcao")
+        const inpData = document.querySelector("input#data")
+        const btnSalvar = document.querySelector("button#btnSalvar")
+
+        btnExcluir.forEach(function (item) {
+            item.addEventListener('click', function () {
+                this.parentElement.parentElement.remove()
+                const id = this.querySelector("span#id_pessoa").innerText
+                console.log(id)
+                sendPostToDelete(id)
+            })
+        })
+
+        function sendPostToDelete(id) {
+            console.log("Enviando POST")
+
+            fetch(`http://localhost:3000/${id}`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "text/plain"
+                }
+            }).then(function (response) {
+                return response
+            }).then(function (resp) {
+                console.log("excluido")
+            })
+
+        }
+
+        function sentData() {
+            if (inpCpf.value.length > 1 & inpNome.value.length > 1 & inpRg.value.length > 1 & inpData.value.length > 1) {
+                let data = {
+                    "nome": inpNome.value,
+                    "rg": inpRg.value,
+                    "cpf": inpCpf.value,
+                    "funcao": inpFunc.value,
+                    "data_nascimento": inpData.value,
+                }
+                fetch(`http://localhost:3000/`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(data)
+                }).then(function (response) {
+                    return response
+                }).then(function (resp) {
+                    console.log("Enviado")
+                    location.reload();
+                })
+            }
+            else{
+                window.alert("Preencha todos os campos.")
+            }
+        }
+
+        function openModal(){
+            const modal = document.querySelector("div.formContainer")
+            modal.style.display = "flex"
+        }
+        
+        function closeModal(){
+            const modal = document.querySelector("div.formContainer")
+            modal.style.display = "none"
+        }
+
+    </script>
+
+</body>
+
+</html>

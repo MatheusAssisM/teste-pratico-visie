@@ -1,0 +1,199 @@
+{% block style %}
+
+<style>
+    body {
+        background: #111;
+        background: url("https://image3.uhdpaper.com/wallpaper-hd/landscape-minimalist-digital-art-uhdpaper.com-hd-23.jpg") center; 
+        font-family: 'Krona One';
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* Container */
+    .content {
+        display: grid;
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
+        border: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 1280px) {
+        .container {
+            max-width: 1000px;
+        }
+    }
+
+    @media screen and (max-width: 1140px) {
+        .container {
+            width: 95%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .container{
+            width: 80%;
+        }
+        .tableContainer table{
+            width: 100%;
+            left: 5;
+        }
+
+        .formContainer{
+            width: 280px !important;            
+            margin-right: 40px;
+            margin-left: 40px ;
+        }
+    }
+
+    div.tableContainer {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+    }
+    
+    table{
+        border-spacing: 0;
+        display: flex;
+        width: 500px;
+        border: none;
+        position: relative;
+        background-color: white;
+        box-shadow: 0 10px 20px rgba(109, 68, 68, 0.5);
+        border-radius: 10px;
+        padding: 0;
+        right: 0;
+        align-items: center;
+    }
+    
+    table th {
+        color: white;
+        border: none;
+        background-color: #4895ef;
+        font-size: 13px;
+        height: 35px;
+        width: 165px;
+        padding-left: 10px;
+        text-align: left;
+    }
+    table td a:hover {
+        opacity: 0.5;
+    }
+    
+    table th.btn {
+       border-top-right-radius: 10px;
+        
+    }
+
+    table th.left {
+        border-top-left-radius: 10px;
+    }
+
+    table td.cell {
+        padding: 4px;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #4444;
+      }
+    
+    td.tdButton{
+        text-align: right;
+    }
+
+    div.formContainer {
+        width: 400px;
+        display: none;
+        position: relative;
+        justify-content: center;
+        justify-self: center;
+        align-items: center;
+        background-color: #4361ee;
+        border-radius: 10px;
+        box-shadow: 10px 5px 40px rgba(0, 0, 0, 0.5);
+        border:none;
+        transition: display 5s;
+    }
+    
+    div.formContainer > div {
+        padding: 10px
+    }
+    
+    div.formContainer button {
+        border: none;
+        display: block;
+        text-align: center;
+        width: 50px;
+        background-color: transparent;
+        border-radius: 100px;
+        height: 50px;
+        margin-right: 4px;      
+        cursor: pointer;
+        position: absolute;
+        transition: opacity 1s;
+    }
+
+    div.formContainer button.saveBtn{
+        bottom: 0;
+        right: 0;
+    }
+
+    div.formContainer button.closeBtn{
+        top: 0;
+        right: 0;
+    }
+     
+    div.formContainer button:hover{
+        opacity: 0.8;
+    }
+    div.formContainer button img{
+        background-color: transparent;
+    }
+
+    button.addBtn{
+        background-color: transparent;
+        border: none;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        position: absolute;
+        right: 60;
+        bottom: 60;
+        cursor: pointer;
+        transition: opacity 1s;
+    }
+
+    button.addBtn:hover{
+        opacity: 0.5;
+    }
+
+    input{
+        border: none;
+        border-radius: 3px;
+        width: 250px;
+        height: 50px;
+        margin: 2px;
+        box-shadow: 0, 0, 65px rgba(0, 0, 0, 1);
+    }
+    
+    select{
+        border: none;
+        width: 250px;
+        height: 50px;
+        margin: 2px;
+        border-radius: 3px;
+    }
+
+</style>
+{% endblock %}
+{% extends "index.html" %}
