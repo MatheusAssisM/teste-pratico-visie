@@ -2,7 +2,7 @@
 
 ## Importante
 
-Neste projeto eu busquei desafiar-me, para mostrar o meu potencial, não fazendo o uso de qualquer tipo de framework para desenvolver este CRUD, mesmo sabendo atuar com Django e Flask. [projeto com django](https://github.com/MatheusAssisM/projeto-agu). 
+Neste projeto eu busquei desafiar-me, para mostrar o meu potencial, não fazendo o uso de qualquer tipo de framework para desenvolver este CRUD, mesmo sabendo atuar com Django e Flask. [Projeto em django](https://github.com/MatheusAssisM/projeto-agu). 
 Desta maneira eu pude mostrar meu conhecimento sobre a linguagem Python em si. 
 
 ### Problemas enfretados
