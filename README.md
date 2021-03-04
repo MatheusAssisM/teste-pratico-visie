@@ -1,5 +1,15 @@
-## Code Interview Visie
-![screenshot](https://user-images.githubusercontent.com/65235458/109810643-8c475600-7c08-11eb-982b-4229b53370d5.png)
+### Code Interview Visie
+
+## Importante
+
+Neste projeto eu busquei desafiar-me, para mostrar o meu potencial, não fazendo o uso de qualquer tipo de framework para desenvolver este CRUD mesmo sabendo atuar com Django e Flask, [projeto com django](https://github.com/MatheusAssisM/projeto-agu). 
+Desta maneira eu pude mostrar meu conhecimento sobre a linguagem Python em si. 
+
+### Problemas enfretados
+
+*  Não pude usar arquivos JS e CSS por problemas com a lib HTTP do Python, mas resolvi usando uma template engine e uma tag Script e Style.
+
+![appgif![app](https://user-images.githubusercontent.com/65235458/110015813-12e05e00-7d03-11eb-825b-f33654209c54.gif)
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -22,14 +32,6 @@
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
-
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-This project was made for a iterview code. 
-The challenge was to build a small api that consumes a database and sends it to a frontend. So I decided to do it without any framework or microframwork to challenge myself and show my potential. 
-I used only an external library, jinja
 
 ### Built With
 
