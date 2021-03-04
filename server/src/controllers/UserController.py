@@ -5,7 +5,7 @@ import json
 
 class MyHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
     def do_GET(self):
-        """Hadle to HTTP GET
+        """Handle to HTTP GET
         """
         try:
             self._set_headers(200)
@@ -16,11 +16,11 @@ class MyHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
 
             return 
         except:
-            self._set_headers(400)
+            self._set_headers(500)
             return
 
     def do_POST(self):
-        """handle two routes from POST
+        """Handle two routes from POST
         """
         try:
             pararm = self.getUrlPararm(self.path)
