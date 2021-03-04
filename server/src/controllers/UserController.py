@@ -139,7 +139,7 @@ class MyHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
         self.end_headers()
 
     def createPessoa(self, obj):
-        """send the pessoa obj to be saved on DB
+        """send the pessoa obj to be saved on DataBase
 
         Args:
             obj (object): pessoa object
@@ -149,7 +149,7 @@ class MyHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
         return
 
     def deleteById(self, id):
-        """delete a pessoa by id
+        """delete a object pessoa by id
 
         Args:
             id (string): prymary key of pessoa

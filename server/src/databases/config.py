@@ -14,6 +14,7 @@ try:
   print("[database] Connected")
 
 except Exception as e:
+  print("[database] Disconnected")
   print("ERROR on database:", e)
 
 
