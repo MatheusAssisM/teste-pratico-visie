@@ -2,12 +2,12 @@
 
 ## Importante
 
-Neste projeto eu busquei desafiar-me, para mostrar o meu potencial, não fazendo o uso de qualquer tipo de framework para desenvolver este CRUD mesmo sabendo atuar com Django e Flask, [projeto com django](https://github.com/MatheusAssisM/projeto-agu). 
+Neste projeto eu busquei desafiar-me, para mostrar o meu potencial, não fazendo o uso de qualquer tipo de framework para desenvolver este CRUD, mesmo sabendo atuar com Django e Flask. [projeto com django](https://github.com/MatheusAssisM/projeto-agu). 
 Desta maneira eu pude mostrar meu conhecimento sobre a linguagem Python em si. 
 
 ### Problemas enfretados
 
-*  Não pude usar arquivos JS e CSS por problemas com a lib HTTP do Python, mas resolvi usando uma template engine e uma tag Script e Style.
+*  Não pude usar arquivos JS e CSS com o HTML por problemas com a lib HTTP do Python, mas resolvi o problema usando uma template engine e uma tag Script e Style.
 
 ![app](https://user-images.githubusercontent.com/65235458/110015813-12e05e00-7d03-11eb-825b-f33654209c54.gif)
 
