@@ -78,7 +78,7 @@ Desta maneira eu pude mostrar meu conhecimento sobre a linguagem Python em si.
 <!-- USAGE EXAMPLES -->
 ## Usage
 ![screenshot2](https://user-images.githubusercontent.com/65235458/109810832-cc0e3d80-7c08-11eb-9751-11d3b21663bf.png)
-This is simple a crud... Not so misterious.
+This is a simple crud... Not so misterious.
 
 
 <!-- CONTACT -->
