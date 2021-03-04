@@ -51,9 +51,10 @@ Desta maneira eu pude mostrar meu conhecimento sobre a linguagem Python em si.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/MatheusAssisM/projeto-visae.git
-    cd server/
+     git clone https://github.com/MatheusAssisM/projeto-visae.git
+     cd server/
    ```
+2. Active the Python Enviroment
  * If you are using powershell
     ```sh
       ./env/Scripts/activate.ps1
@@ -64,12 +65,11 @@ Desta maneira eu pude mostrar meu conhecimento sobre a linguagem Python em si.
    ```
 3. Install the python packages
    ```sh
-    cd ..
     pip install -r requirements.txt
    ```
 4. Running aplication
    ```JS
-    cd ./server/src
+    cd ./src
     python main.py
    ```
 4. Enter on your http://localhost:3000
