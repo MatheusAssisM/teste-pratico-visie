@@ -27,9 +27,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-
-* If you want make a test, enter [HERE](https://serverassis.sytes.net:3000)
-
 This project was made for a iterview code. 
 The challenge was to build a small api that consumes a database and sends it to a frontend. So I decided to do it without any framework or microframwork to challenge myself and show my potential. 
 I used only an external library, jinja
