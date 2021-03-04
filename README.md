@@ -9,7 +9,7 @@ Desta maneira eu pude mostrar meu conhecimento sobre a linguagem Python em si.
 
 *  Não pude usar arquivos JS e CSS por problemas com a lib HTTP do Python, mas resolvi usando uma template engine e uma tag Script e Style.
 
-![appgif![app](https://user-images.githubusercontent.com/65235458/110015813-12e05e00-7d03-11eb-825b-f33654209c54.gif)
+![app](https://user-images.githubusercontent.com/65235458/110015813-12e05e00-7d03-11eb-825b-f33654209c54.gif)
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
